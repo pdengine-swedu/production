@@ -1,0 +1,17 @@
+Rakefile
+bin/
+config.ru
+db/
+lib/
+log/
+public/
+tmp/
+vendor/
+Gemfile.lock
+config/application.rb
+config/boot.rb
+config/environment.rb
+config/environments
+config/initializers
+config/locales
+config/mongoid.yml
