@@ -6,7 +6,6 @@ lib/
 log/
 public/
 tmp/
-vendor/
 Gemfile.lock
 config/application.rb
 config/boot.rb

@@ -11,3 +11,6 @@
  *= require_self
  *= require_tree .
  */
+
+ @import "bootstrap.min.css";
+ @import "bootstrap-theme.min.css";
