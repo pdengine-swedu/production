@@ -5,3 +5,18 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.listing {
+	border:2px solid #eeeeee;
+}
+
+.list-group-item {
+	border:0;
+}
+
+.facetNav {
+	padding: 40px 15px;
+  	text-align: center;
+	border:2px solid #eeeeee;
+	border-right:0;
+}

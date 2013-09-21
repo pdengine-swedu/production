@@ -24,6 +24,21 @@
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
+      <div class="row">
+        <div class="col-md-4 facetNav">
+          <span><h2>Facets</h2></span>
+        </div>
+        <div class="col-md-8 listing">
+          <ul class="list-group">
+            <% @seminars.each do |seminar| %>
+              <li class="list-group-item">
+                <h2><%= seminar.title %></h2>
+                <%= seminar.description %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
 
     </div><!-- /.container -->
 
@@ -35,30 +50,6 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
 
 <!-- <h1>Listing seminars</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Title</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @seminars.each do |seminar| %>
-      <tr>
-        <td><%= seminar.description %></td>
-        <td><%= seminar.title %></td>
-        <td><%= link_to 'Show', seminar %></td>
-        <td><%= link_to 'Edit', edit_seminar_path(seminar) %></td>
-        <td><%= link_to 'Destroy', seminar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
