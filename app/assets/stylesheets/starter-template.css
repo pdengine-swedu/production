@@ -8,7 +8,9 @@ body {
 
 .listing {
 	border:2px solid #eeeeee;
+	height: 800px;
 }
+
 
 .list-group-item {
 	border:0;
