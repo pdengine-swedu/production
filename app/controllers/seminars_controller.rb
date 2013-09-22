@@ -24,7 +24,7 @@ class SeminarsController < ApplicationController
       @seminars = @seminars.where(isOnline: onlineBool)
     end
 
-    @tagsArray = params['tags]
+    @tagsArray = params['tags']
 
     @seminars = Seminar.all
 
