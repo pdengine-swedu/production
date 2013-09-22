@@ -58,7 +58,7 @@
             <% else %>
               <%= radio_button_tag(:online, "0") %>
             <% end %>
-
+              <%= hidden_field_tag :search, @search %>
             <span><%= submit_tag "search", :class => "btn btn-primary" %><span/>
           </div>
           <% end %>

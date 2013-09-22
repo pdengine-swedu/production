@@ -5,6 +5,7 @@ class SeminarsController < ApplicationController
   # GET /seminars.json
   def index
     @seminars = nil
+    @search = params[:search]
     if params[:search]
       @seminars = Seminar.search params[:search]
     else

@@ -49,12 +49,14 @@ CSV.foreach("db/PD Engine Submissions (Responses) - Form Responses.csv") do |row
 		 twitterHandle: twitterHandle, description: description, line_1: lineOne, city: city, state: state, 
 		 zip_code: zip, isOnline: isOnline, isFree: isFree, seminar_link: eventLink, additional_resource_link: supportingResourceLink);
 
-		tags = row[14].split(',');
-		print tags
-		tags.each do |tag|
-			seminar.tags.push(Tag.new(title: tag));
+		if row[14] != nil
+			tags = row[14].split(',');
+			print tags
+			tags.each do |tag|
+				seminar.tags.push(Tag.new(title: tag));
+			end
+			print seminar.tags;
 		end
-		print seminar.tags;
 		seminar.save;
 
 end
