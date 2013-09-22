@@ -12,9 +12,15 @@
       <div class="row">
         <div class="col-md-4 facetNav">
           <span><h2>Facets</h2></span>
+
+
           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
 
-          
+
+          <% @frontendTags.each do |key, value| %>
+              <%= check_box_tag("tags[]", value) %>
+            <%= value %>
+          <% end %>
         </div>
         <div class="col-md-7 listing">
           <div class="panel-group" id="accordion">
