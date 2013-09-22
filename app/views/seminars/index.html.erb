@@ -1,4 +1,5 @@
 
+
     <div class="container">
 
       <div class="starter-template">
@@ -10,14 +11,24 @@
           <span><h2>Facets</h2></span>
           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
 
-          
+
         </div>
         <div class="col-md-7 listing">
           <ul>
             <% @seminars.each do |seminar| %>
-              <li class="list-group-item">
+
+              <li class="list-group-item container">
+                <div class= 'col-md-8'>
                 <h2><%= seminar.title %></h2>
-                <%= seminar.description %>
+                <h4><%= link_to seminar.description, seminar.additional_resource_link %></h4>
+                <h7><%= seminar.instructorName %></h7>
+                <h7><%= seminar.startDate %></h7>
+              </div>
+                <div class = 'col-md-4 actions'>
+                 <p><%= button_tag "Free", class: "btn btn-primary" %></p>
+                 <p><%= button_tag "SignUp", class: "btn btn-primary" %></p>
+               </div>
+
                 <% seminar.tags.each do |tag| %>
                   <%= tag.title %>
                 <% end %>

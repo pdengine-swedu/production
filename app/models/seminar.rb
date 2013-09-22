@@ -21,7 +21,7 @@ class Seminar
 
 	has_and_belongs_to_many :tags
 
-	search_in :title, :description, :instructorName, :tags => :title 
+	search_in :title, :description, :instructorName, :tags => :title
 
 	def self.search(search)
 		self.full_text_search(search)
