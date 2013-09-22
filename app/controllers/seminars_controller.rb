@@ -9,6 +9,7 @@ class SeminarsController < ApplicationController
     else
       @seminars = Seminar.all
     end
+    @tagsArray = params[:blah]
   end
 
   # GET /seminars/1
