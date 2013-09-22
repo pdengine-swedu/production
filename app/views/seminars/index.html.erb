@@ -1,10 +1,14 @@
-
     <div class="container">
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<div class = "row">
+  <div class = "form-control example-countries typeahead buffered">
+        <%= form_tag seminars_path, :method => 'get' do %>
+          <%= text_field_tag :search, params[:search], :placeholder => "Enter search"%>
+          <%= submit_tag "search", :class => "btn btn-primary autocomplete-btn" %>
+        <% end %>
       </div>
+</div>
+
+
       <div class="row">
         <div class="col-md-4 facetNav">
           <span><h2>Facets</h2></span>
