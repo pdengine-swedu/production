@@ -11,22 +11,20 @@ class SeminarsController < ApplicationController
       @seminars = Seminar.all
     end
 
-    pr = params['pr']
-    online = params['online']
+    @pr = params['pr']
+    @online = params['online']
 
-    if pr != nil
-      prBool = (pr == '1')
+    if @pr != nil
+      prBool = (@pr == '1')
       @seminars = @seminars.where(isFree: prBool)
     end
 
-    if online != nil
-      onlineBool = (online == '1')
+    if @online != nil
+      onlineBool = (@online == '1')
       @seminars = @seminars.where(isOnline: onlineBool)
     end
 
     @tagsArray = params['tags']
-
-    @seminars = Seminar.all
 
     @frontendTags = {}
 
@@ -35,7 +33,7 @@ class SeminarsController < ApplicationController
 
       seminar.tags.each do |tag|
 
-        if @tagsArray.include? tag.title
+        if (@tagsArray == nil) || (@tagsArray.include? tag.title)
           isRemoved = false;
         end
       end
@@ -53,6 +51,7 @@ class SeminarsController < ApplicationController
 
     #@seminars = @seminars.tags.where("title" => { "$in" => @tagsArray });
   end
+
 
   # GET /seminars/1
   # GET /seminars/1.json

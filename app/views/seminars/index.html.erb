@@ -11,15 +11,55 @@
 
       <div class="row">
         <div class="col-md-4 facetNav">
-          <span><h2>Facets</h2></span>
 
+          <%= form_tag "/seminars", :method => 'get' do %>
 
-          <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
-
-
-          <% @frontendTags.each do |key, value| %>
+          <div style="text-align:left;padding-left:80px">
+            <span><h3>Refinements</h3></span>
+            <span><h4>Tags</h4></span>
+          <span>
+            <% @frontendTags.each do |key, value| %>
+            
+            <% if @tagsArray != nil && (@tagsArray.include? value) %>
+              <%= check_box_tag("tags[]", value, 'active') %>
+            <% else %>
               <%= check_box_tag("tags[]", value) %>
-            <%= value %>
+            <% end %>
+              <%= value %>
+              <br/>
+            <% end %>
+          </span>
+
+            <span><h4>Pricing</h4></span>
+            Free
+            <% if @pr == "1" %>
+              <%= radio_button_tag(:pr, "1", true) %>
+            <% else %>
+              <%= radio_button_tag(:pr, "1") %>
+            <% end %>
+            Paid
+            <% if @pr == "0" %>
+              <%= radio_button_tag(:pr, "0", true) %>
+            <% else %>
+              <%= radio_button_tag(:pr, "0") %>
+            <% end %>
+
+            <span><h4>Location</h4></span>
+            Online
+            <% if @online == "1" %>
+              <%= radio_button_tag(:online, "1", true) %>
+            <% else %>
+              <%= radio_button_tag(:online, "1") %>
+            <% end %>
+            In Person
+            <% if @online == "0" %>
+              <%= radio_button_tag(:online, "0", true) %>
+            <% else %>
+              <%= radio_button_tag(:online, "0") %>
+            <% end %>
+
+            <span><%= submit_tag "search", :class => "btn btn-primary" %><span/>
+          </div>
           <% end %>
         </div>
         <div class="col-md-7 listing">
