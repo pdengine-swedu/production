@@ -76,9 +76,13 @@
                 <h2><%= seminar.title %></h2>
                 <h7><%= seminar.instructorName %></h7>
                 <h7><%= seminar.startDate.strftime("%A; %B %d, %Y; %H:%M %p") %></h7>
-                    </div>
-                <div class = 'col-md-2 actions'>
+              </div>
+                <div class = 'col-md-4 actions'>
+                  <% if seminar.isFree %>
                  <p><%= button_tag "Free", class: "btn btn-primary" %></p>
+                 <% else %>
+                  <p><%= button_tag "Paid", class: "btn btn-primary" %></p>
+                 <% end %>
                  <p><%= button_tag "SignUp", class: "btn btn-primary" %></p>
                </div>
              </div>
@@ -88,9 +92,8 @@
        <div class="panel-collapse collapse" id=<%= seminar.id %> >
                   <div class="panel-body">
                     <%= seminar.description %>
+                    <% if seminar.additional_resource_link != nil %>
                     <h4><%= link_to seminar.additional_resource_link, 'http://' + seminar.additional_resource_link %></h4>
-                    <% seminar.tags.each do |tag| %>
-                      <%= tag.title %>
                     <% end %>
                   </div>
                 </div>
