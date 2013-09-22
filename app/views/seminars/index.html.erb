@@ -15,6 +15,9 @@
               <li class="list-group-item">
                 <h2><%= seminar.title %></h2>
                 <%= seminar.description %>
+                <% seminar.tags.each do |tag| %>
+                  <%= tag.title %>
+                <% end %>
               </li>
             <% end %>
           </ul>
@@ -24,11 +27,6 @@
     </div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
 
 <!-- <h1>Listing seminars</h1>
 
