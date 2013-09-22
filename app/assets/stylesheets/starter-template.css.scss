@@ -25,7 +25,7 @@ body {
 
 .jumbotron {
 	height: 500px;
-	background: url(image_path('jumbotron_opaque_image.jpg')) no-repeat 0;
+	background: asset-data-url('jumbotron_opaque_image.jpg') no-repeat 0;
 }
 
 .typeahead-container {
