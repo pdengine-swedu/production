@@ -22,3 +22,12 @@ body {
 	border:2px solid #eeeeee;
 	border-right:0;
 }
+
+.jumbotron {
+	height: 500px;
+	background: url(/assets/jumbotron_opaque_image.jpg) no-repeat 0;
+}
+
+.typeahead-container {
+	text-align: center;
+}
