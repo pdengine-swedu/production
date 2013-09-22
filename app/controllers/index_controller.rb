@@ -1,10 +1,10 @@
 class IndexController < ApplicationController
-  before_action :set_seminar, only: [index]
+  before_action :seminar_params, only: [:index]
 
   # GET /seminars
   # GET /seminars.json
   def index
-    @tagsArray = params[:blah]
+    @blah = params[:blah]
     @seminars = Seminar.all
     @tags = Tag.all
   end
@@ -21,7 +21,7 @@ class IndexController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def seminar_params
-      params.require(:seminar).permit(:description, :title)
-      params.permt(:blah)
+      # params.require(:seminar).permit(:description, :title)
+      params.permit(:blah);
     end
 end
