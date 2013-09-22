@@ -25639,3 +25639,1573 @@ ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"
   Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
   Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
   Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.1ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:00:11 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9050ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"$or"=>[{"_keywords"=>/english/}, {"_keywords"=>/language/}, {"_keywords"=>/arts/}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5350ms)
+  Rendered seminars/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 401ms (Views: 207.5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.8ms)
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:00:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.7ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7980ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"$or"=>[{"_keywords"=>/english/}, {"_keywords"=>/language/}, {"_keywords"=>/arts/}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4311ms)
+  Rendered seminars/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 12.2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.3ms)
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:00:14 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.9ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9649ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"$or"=>[{"_keywords"=>/english/}, {"_keywords"=>/language/}, {"_keywords"=>/arts/}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5600ms)
+  Rendered seminars/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 278ms (Views: 126.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:08:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.3ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:44 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 156ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___1027186751375277279_70252989460140'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:45 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___1027186751375277279_70252989460140'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:45 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___1027186751375277279_70252989460140'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (31.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.7ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:45 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___1027186751375277279_70252989460140'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:48 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___1027186751375277279_70252989460140'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:08:48 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___1027186751375277279_70252989460140'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:09:32 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 173ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___2380450124505354757_70107365181180'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:09:32 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___2380450124505354757_70107365181180'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:09:32 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___2380450124505354757_70107365181180'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:09:33 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___2380450124505354757_70107365181180'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:09:33 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___2380450124505354757_70107365181180'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/seminars?utf8=%E2%9C%93&search=English+Language+Arts&commit=search" for 127.0.0.1 at 2013-09-22 12:09:33 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"English Language Arts", "commit"=>"search"}
+  Rendered seminars/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb___2380450124505354757_70107365181180'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:09:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.6ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:09:51 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1699ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.8090ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e76ece4c1546605000032", "523e76ece4c1546605000033", "523e76ece4c1546605000034", "523e76ece4c1546605000035", "523e76ece4c1546605000036", "523e76ece4c1546605000037", "523e76ece4c1546605000038", "523e76ece4c1546605000039", "523e76ece4c154660500003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5910ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e799ee4c154e706000032", "523e799ee4c154e706000033", "523e799ee4c154e706000034", "523e799ee4c154e706000035", "523e799ee4c154e706000036", "523e799ee4c154e706000037", "523e799ee4c154e706000038", "523e799ee4c154e706000039", "523e799ee4c154e70600003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5231ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e79c4e4c1546ef9000032", "523e79c4e4c1546ef9000033", "523e79c4e4c1546ef9000034", "523e79c4e4c1546ef9000035", "523e79c4e4c1546ef9000036", "523e79c4e4c1546ef9000037", "523e79c4e4c1546ef9000038", "523e79c4e4c1546ef9000039", "523e79c4e4c1546ef900003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4873ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e7b90e4c154e896000032", "523e7b90e4c154e896000033", "523e7b90e4c154e896000034", "523e7b90e4c154e896000035", "523e7b90e4c154e896000036", "523e7b90e4c154e896000037", "523e7b90e4c154e896000038", "523e7b90e4c154e896000039", "523e7b90e4c154e89600003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6609ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e7ca1e4c15432a5000032", "523e7ca1e4c15432a5000033", "523e7ca1e4c15432a5000034", "523e7ca1e4c15432a5000035", "523e7ca1e4c15432a5000036", "523e7ca1e4c15432a5000037", "523e7ca1e4c15432a5000038", "523e7ca1e4c15432a5000039", "523e7ca1e4c15432a500003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6111ms)
+  Rendered seminars/index.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 148ms (Views: 147.1ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:09:53 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.8221ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e76ece4c1546605000032", "523e76ece4c1546605000033", "523e76ece4c1546605000034", "523e76ece4c1546605000035", "523e76ece4c1546605000036", "523e76ece4c1546605000037", "523e76ece4c1546605000038", "523e76ece4c1546605000039", "523e76ece4c154660500003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4911ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e799ee4c154e706000032", "523e799ee4c154e706000033", "523e799ee4c154e706000034", "523e799ee4c154e706000035", "523e799ee4c154e706000036", "523e799ee4c154e706000037", "523e799ee4c154e706000038", "523e799ee4c154e706000039", "523e799ee4c154e70600003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3850ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e79c4e4c1546ef9000032", "523e79c4e4c1546ef9000033", "523e79c4e4c1546ef9000034", "523e79c4e4c1546ef9000035", "523e79c4e4c1546ef9000036", "523e79c4e4c1546ef9000037", "523e79c4e4c1546ef9000038", "523e79c4e4c1546ef9000039", "523e79c4e4c1546ef900003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4449ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e7b90e4c154e896000032", "523e7b90e4c154e896000033", "523e7b90e4c154e896000034", "523e7b90e4c154e896000035", "523e7b90e4c154e896000036", "523e7b90e4c154e896000037", "523e7b90e4c154e896000038", "523e7b90e4c154e896000039", "523e7b90e4c154e89600003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5717ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e7ca1e4c15432a5000032", "523e7ca1e4c15432a5000033", "523e7ca1e4c15432a5000034", "523e7ca1e4c15432a5000035", "523e7ca1e4c15432a5000036", "523e7ca1e4c15432a5000037", "523e7ca1e4c15432a5000038", "523e7ca1e4c15432a5000039", "523e7ca1e4c15432a500003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5610ms)
+  Rendered seminars/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:09:54 -0500
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.8692ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"tags"=>["Technology Coaching", "ipad"]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5600ms)
+  Rendered seminars/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 132ms (Views: 86.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:16:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (65.0ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.6017ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"tags"=>["Technology Coaching", "ipad"]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5713ms)
+  Rendered seminars/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:16:47 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2989ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"tags"=>["Technology Coaching", "ipad"]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4051ms)
+  Rendered seminars/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:16:48 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:16:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (17.6ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.1212ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"tags"=>{"$in"=>["Technology Coaching", "ipad"]}} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3629ms)
+  Rendered seminars/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 141ms (Views: 93.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:18:50 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.0ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={"tags"=>{"$in"=>["Technology Coaching", "ipad"]}} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4859ms)
+  Rendered seminars/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 12ms (Views: 11.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:18:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (18.5ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2281ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000001", "title"=>"'Professional Development'"}] flags=[] (0.1919ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000002", "title"=>" 'Workshop'"}] flags=[] (0.1690ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000003", "title"=>" 'Pre-K'"}] flags=[] (0.1419ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000004", "title"=>" 'K-5'"}] flags=[] (0.2849ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000005", "title"=>" 'K-8'"}] flags=[] (0.1149ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000006", "title"=>" 'K-12'"}] flags=[] (0.1023ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000007", "title"=>" 'Higher Education'"}] flags=[] (0.0882ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000008", "title"=>" 'Math'"}] flags=[] (0.1271ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000009", "title"=>" 'English Language Arts'"}] flags=[] (0.0813ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00000a", "title"=>" 'Applied Technology'"}] flags=[] (0.0751ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00000b", "title"=>" 'Music'"}] flags=[] (0.0958ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00000c", "title"=>" 'Physical Education'"}] flags=[] (0.0679ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00000d", "title"=>" 'Health / Wellness'"}] flags=[] (0.0870ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00000e", "title"=>" 'Technology Integration'"}] flags=[] (0.0713ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00000f", "title"=>" 'Technology Coaching'"}] flags=[] (0.0851ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000010", "title"=>" 'iPad'"}] flags=[] (0.0811ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000011", "title"=>" 'Mobile Computing'"}] flags=[] (0.1192ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000012", "title"=>" 'Digital Literacy'"}] flags=[] (0.0870ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000013", "title"=>" 'Library'"}] flags=[] (0.0818ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000014", "title"=>" 'Google Apps for Education'"}] flags=[] (0.0830ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000015", "title"=>" 'Reading Strategies'"}] flags=[] (0.0818ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000016", "title"=>" 'Special Education'"}] flags=[] (0.0830ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000017", "title"=>" 'Assistive Technology'"}] flags=[] (0.0811ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000018", "title"=>" 'Library Science'"}] flags=[] (0.0811ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000019", "title"=>" 'Speech Therapy'"}] flags=[] (0.0818ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00001a", "title"=>" 'World Language'"}] flags=[] (0.0801ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00001b", "title"=>" 'Art'"}] flags=[] (0.0818ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00001c", "title"=>" 'Executive Functioning'"}] flags=[] (0.0951ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00001d", "title"=>" 'Algebra'"}] flags=[] (0.1061ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00001e", "title"=>" 'Pre-Calculus'"}] flags=[] (0.0830ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00001f", "title"=>" 'Chemistry'"}] flags=[] (0.0892ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000020", "title"=>" 'Earth Science'"}] flags=[] (0.0951ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000021", "title"=>" 'Biology'"}] flags=[] (0.0932ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000022", "title"=>" 'Geology'"}] flags=[] (0.0980ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000023", "title"=>" 'Outdoor Education'"}] flags=[] (0.0858ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000024", "title"=>" 'Common Core'"}] flags=[] (0.0889ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000025", "title"=>" 'NETS Standards'"}] flags=[] (0.0892ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000026", "title"=>" 'Differentiation'"}] flags=[] (0.0839ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000027", "title"=>" 'Formative Assessment'"}] flags=[] (0.0830ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000028", "title"=>" 'Summative Assessment'"}] flags=[] (0.0801ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000029", "title"=>" 'Classroom Management'"}] flags=[] (0.0799ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00002a", "title"=>" 'Cognitive Thinking Strategies'"}] flags=[] (0.0789ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00002b", "title"=>" 'Social Studies'"}] flags=[] (0.0801ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00002c", "title"=>" 'School Psychology'"}] flags=[] (0.0799ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00002d", "title"=>" 'Administrative Leadership'"}] flags=[] (0.1070ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00002e", "title"=>" 'Educational Leadership'"}] flags=[] (0.0849ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00002f", "title"=>" 'Assessment and Data'"}] flags=[] (0.0818ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000030", "title"=>nil}] flags=[] (0.0892ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=myapp_development command={:count=>"tags", :query=>{"$and"=>[{"_id"=>{"$in"=>[]}}]}} (0.8929ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=seminars documents=[{"_id"=>"523f2bafe4c154b7ae000031", "title"=>"The Google Educast Show", "startDate"=>1970-01-01 00:00:00 UTC, "endDate"=>2013-09-19 20:30:00 UTC, "instructorName"=>"Kevin Brookhouser", "twitterHandle"=>"@brookhouser", "description"=>"The Google Educast, hosted by the Google Certified Teachers, features a weekly roundup of the newest Ed tools from Google, highlighting best practices using Google tools, and further highlighting the impact that these tools have on the classroom, schools, and school districts. If you miss the show, make sure to listen to the podcast at http://edreach.us/educast  ", "line_1"=>"Online ", "city"=>"", "state"=>"", "zip_code"=>nil, "isOnline"=>true, "isFree"=>true, "seminar_link"=>"https://plus.google.com/b/112590020369038537854/events/cd301afr4d87mru9rgtcoaohhtc", "additional_resource_link"=>"edreach.us/wiki", "_keywords"=>["and", "at", "best", "brookhouser", "by", "certified", "classroom", "districts", "ed", "edreach", "educast", "features", "from", "further", "google", "have", "highlighting", "hosted", "http", "if", "impact", "kevin", "listen", "make", "miss", "newest", "of", "on", "podcast", "practices", "roundup", "school", "schools", "show", "sure", "teachers", "that", "the", "these", "to", "tools", "us", "using", "weekly", "you"]}] flags=[] (0.3619ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000032"]}}} flags=[] (0.1750ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000032", "title"=>"K-8", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.1049ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000033"]}}} flags=[] (0.1080ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000033", "title"=>" English Language Arts", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0751ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000034"]}}} flags=[] (0.0792ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000034", "title"=>" Technology Integration", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0896ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000035"]}}} flags=[] (0.0827ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000035", "title"=>"Technology Coaching", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0739ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000036"]}}} flags=[] (0.0701ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000036", "title"=>"iPad", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0892ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000037"]}}} flags=[] (0.0930ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000037", "title"=>"Mobile Computing", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0839ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000038"]}}} flags=[] (0.0980ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000038", "title"=>"Google Apps for Education", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0842ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae000039"]}}} flags=[] (0.0911ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae000039", "title"=>"Reading Strategies", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0789ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$addToSet"=>{"tag_ids"=>{"$each"=>["523f2bafe4c154b7ae00003a"]}}} flags=[] (0.0889ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=myapp_development collection=tags documents=[{"_id"=>"523f2bafe4c154b7ae00003a", "title"=>"NETS Standards", "seminar_ids"=>["523f2bafe4c154b7ae000031"]}] flags=[] (0.0820ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=myapp_development command={:count=>"tags", :query=>{"$and"=>[{"_id"=>{"$in"=>[]}}]}} (0.5062ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=myapp_development collection=seminars selector={"_id"=>"523f2bafe4c154b7ae000031"} update={"$set"=>{"_keywords"=>["and", "apps", "arts", "at", "best", "brookhouser", "by", "certified", "classroom", "coaching", "computing", "districts", "ed", "edreach", "educast", "education", "english", "features", "for", "from", "further", "google", "have", "highlighting", "hosted", "http", "if", "impact", "integration", "ipad", "kevin", "language", "listen", "make", "miss", "mobile", "nets", "newest", "of", "on", "podcast", "practices", "reading", "roundup", "school", "schools", "show", "standards", "strategies", "sure", "teachers", "technology", "that", "the", "these", "to", "tools", "us", "using", "weekly", "you"]}} flags=[] (0.3033ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:41:40 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `tags' for #<Mongoid::Criteria:0x007feac40280f8>):
+  app/controllers/seminars_controller.rb:14:in `index'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.9ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:43:25 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  Rendered seminars/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           <span><h2>Facets</h2></span>
+    11:           <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+    12: 
+    13:           <% @tagsArray.each do |tag| %>
+    14:             <%= tag %>
+    15:           <% end %>
+    16:         </div>
+  app/views/seminars/index.html.erb:13:in `_app_views_seminars_index_html_erb__3964544157740338937_70180740606980'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.8ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:43:46 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+ERROR: compiling _app_views_seminars_index_html_erb__3964544157740338937_70180730210340 RAISED /Users/ron/Projects/ror/pd_engine/app/views/seminars/index.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input
+Function body:           def _app_views_seminars_index_html_erb__3964544157740338937_70180730210340(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "seminars/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 facetNav">
+          <span><h2>Facets</h2></span>
+          <a href="/seminars?blah[]=Technology Coaching&blah[]=ipad">Facets</a>
+
+          
+';           end 
+@output_buffer.safe_append='        </div>
+        <div class="col-md-7 listing">
+          <ul>
+';             debug(@seminars) 
+             @seminars.each do |seminar| 
+@output_buffer.safe_append='              <li class="list-group-item">
+                <h2>';@output_buffer.append=( seminar.title );@output_buffer.safe_append='</h2>
+                ';@output_buffer.append=( seminar.description );@output_buffer.safe_append='
+';                 seminar.tags.each do |tag| 
+@output_buffer.safe_append='                  ';@output_buffer.append=( tag.title );@output_buffer.safe_append='
+';                 end 
+@output_buffer.safe_append='              </li>
+';             end 
+@output_buffer.safe_append='          </ul>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+
+
+<!-- <h1>Listing seminars</h1>
+
+<br>
+
+';@output_buffer.append=( link_to 'New Seminar', new_seminar_path );@output_buffer.safe_append=' -->
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__3245926023569177624__process_action__callbacks'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/bundler/gems/mongoid-a0021858bbb4/lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/bundler/gems/mongoid-a0021858bbb4/lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/bundler/gems/mongoid-a0021858bbb4/lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__511785108877770712__call__callbacks'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered seminars/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (/Users/ron/Projects/ror/pd_engine/app/views/seminars/index.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input):
+    39: 
+    40: <%= link_to 'New Seminar', new_seminar_path %> -->
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__3245926023569177624__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  /Users/ron/.rvm/gems/ruby-2.0.0-p247/bundler/gems/mongoid-a0021858bbb4/lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  /Users/ron/.rvm/gems/ruby-2.0.0-p247/bundler/gems/mongoid-a0021858bbb4/lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  /Users/ron/.rvm/gems/ruby-2.0.0-p247/bundler/gems/mongoid-a0021858bbb4/lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__511785108877770712__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/seminars?blah[]=Technology%20Coaching&blah[]=ipad" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+Processing by SeminarsController#index as HTML
+  Parameters: {"blah"=>["Technology Coaching", "ipad"]}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0428ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=seminars selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.4131ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e76ece4c1546605000032", "523e76ece4c1546605000033", "523e76ece4c1546605000034", "523e76ece4c1546605000035", "523e76ece4c1546605000036", "523e76ece4c1546605000037", "523e76ece4c1546605000038", "523e76ece4c1546605000039", "523e76ece4c154660500003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6220ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e799ee4c154e706000032", "523e799ee4c154e706000033", "523e799ee4c154e706000034", "523e799ee4c154e706000035", "523e799ee4c154e706000036", "523e799ee4c154e706000037", "523e799ee4c154e706000038", "523e799ee4c154e706000039", "523e799ee4c154e70600003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4528ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e79c4e4c1546ef9000032", "523e79c4e4c1546ef9000033", "523e79c4e4c1546ef9000034", "523e79c4e4c1546ef9000035", "523e79c4e4c1546ef9000036", "523e79c4e4c1546ef9000037", "523e79c4e4c1546ef9000038", "523e79c4e4c1546ef9000039", "523e79c4e4c1546ef900003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4168ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e7b90e4c154e896000032", "523e7b90e4c154e896000033", "523e7b90e4c154e896000034", "523e7b90e4c154e896000035", "523e7b90e4c154e896000036", "523e7b90e4c154e896000037", "523e7b90e4c154e896000038", "523e7b90e4c154e896000039", "523e7b90e4c154e89600003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.7563ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523e7ca1e4c15432a5000032", "523e7ca1e4c15432a5000033", "523e7ca1e4c15432a5000034", "523e7ca1e4c15432a5000035", "523e7ca1e4c15432a5000036", "523e7ca1e4c15432a5000037", "523e7ca1e4c15432a5000038", "523e7ca1e4c15432a5000039", "523e7ca1e4c15432a500003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6940ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=myapp_development collection=tags selector={"$and"=>[{"_id"=>{"$in"=>["523f2bafe4c154b7ae000032", "523f2bafe4c154b7ae000033", "523f2bafe4c154b7ae000034", "523f2bafe4c154b7ae000035", "523f2bafe4c154b7ae000036", "523f2bafe4c154b7ae000037", "523f2bafe4c154b7ae000038", "523f2bafe4c154b7ae000039", "523f2bafe4c154b7ae00003a"]}}]} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6530ms)
+  Rendered seminars/index.html.erb within layouts/application (66.5ms)
+Completed 200 OK in 160ms (Views: 158.6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/bootstrap-theme.min.css?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/typeahead.css?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/sticky-footer.css?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/starter-template.css?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/seminars.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/typeahead-test.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/typeahead.min.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+
+Started GET "/assets/ico/favicon.png" for 127.0.0.1 at 2013-09-22 12:44:00 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/ico/favicon.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/ron/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /Users/ron/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.8ms)

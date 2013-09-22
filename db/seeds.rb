@@ -7,13 +7,13 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'csv'
 
-CSV.foreach("/Users/ron/Documents/tagsTest.csv") do |row|
+CSV.foreach("db/tagsTest.csv") do |row|
 	row.each do |tag|
 		Tag.create(title: tag);
 	end
 end
 
-CSV.foreach("/Users/ron/Documents/PD Engine Submissions (Responses) - Form Responses.csv") do |row|
+CSV.foreach("db/PD Engine Submissions (Responses) - Form Responses.csv") do |row|
 		isOnline = false;
 		if row[1] != nil && row[1].downcase == 'online'
 			isOnline = true;
