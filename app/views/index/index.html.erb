@@ -5,12 +5,11 @@
         <h2 class="example-name">Building your credentials- in the easiest way possible</h2>
 
         <div class="demo">
-        	<form>
-	        	<input type="text" class="form-control example-countries typeahead" placeholder="Enter search">
-	        	<button type="submit" class="btn btn-primary autocomplete-btn">Search</button>
-        	</form>
+        	<%= form_tag seminars_path, :method => 'get' do %>
+	        	<%= text_field_tag :search, params[:search], :class => "form-control example-countries typeahead", :placeholder => "Enter search"%>
+	        	<%= submit_tag "search", :class => "btn btn-primary autocomplete-btn" %>
+        	<% end %>
         </div>
-
 	</div>
       <!-- end typeahead -->
   </div>

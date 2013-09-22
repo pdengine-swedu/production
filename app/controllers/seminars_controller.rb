@@ -4,7 +4,11 @@ class SeminarsController < ApplicationController
   # GET /seminars
   # GET /seminars.json
   def index
-    @seminars = Seminar.all
+    if params[:search]
+      @seminars = Seminar.search params[:search]
+    else
+      @seminars = Seminar.all
+    end
   end
 
   # GET /seminars/1
@@ -19,6 +23,10 @@ class SeminarsController < ApplicationController
 
   # GET /seminars/1/edit
   def edit
+  end
+
+  def search
+    @seminars = Seminar.search params[:search]
   end
 
   # POST /seminars

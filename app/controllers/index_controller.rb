@@ -7,6 +7,10 @@ class IndexController < ApplicationController
     @seminars = Seminar.all
   end
 
+#  def search
+#    @seminars = Seminar.search params[:search]
+#  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_seminar

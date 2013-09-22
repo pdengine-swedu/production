@@ -1,5 +1,6 @@
 class Seminar
 	include Mongoid::Document
+	include Mongoid::Search
 	field :title, type: String
 	field :description, type: String
 	field :instructorName, type: String
@@ -19,4 +20,11 @@ class Seminar
 	field :zip_code, type: String
 
 	has_and_belongs_to_many :tags
+
+	search_in :title, :description, :instructorName, :tags => :title 
+
+	def self.search(search)
+		self.full_text_search(search)
+	end
+
 end
