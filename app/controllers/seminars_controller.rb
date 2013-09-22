@@ -4,14 +4,54 @@ class SeminarsController < ApplicationController
   # GET /seminars
   # GET /seminars.json
   def index
+    @seminars = nil
     if params[:search]
       @seminars = Seminar.search params[:search]
     else
       @seminars = Seminar.all
     end
-    # @tagsArray = params['blah']
-    # @seminars = Seminar.all
-    # @seminars = @seminars.tags.where("title" => { "$in" => @tagsArray });
+
+    pr = params['pr']
+    online = params['online']
+
+    if pr != nil
+      prBool = (pr == '1')
+      @seminars = @seminars.where(isFree: prBool)
+    end
+
+    if online != nil
+      onlineBool = (online == '1')
+      @seminars = @seminars.where(isOnline: onlineBool)
+    end
+
+    @tagsArray = params['tags]
+
+    @seminars = Seminar.all
+
+    @frontendTags = {}
+
+    @seminars.each_with_index do |seminar, index|
+      isRemoved = true;
+
+      seminar.tags.each do |tag|
+
+        if @tagsArray.include? tag.title
+          isRemoved = false;
+        end
+      end
+
+      if isRemoved
+        @seminars.delete_at(index);
+      end
+
+      if isRemoved == false
+        seminar.tags.each do |tag|
+          @frontendTags[tag.title] = tag.title;
+        end
+      end
+    end
+
+    #@seminars = @seminars.tags.where("title" => { "$in" => @tagsArray });
   end
 
   # GET /seminars/1
