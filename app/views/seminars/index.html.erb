@@ -71,13 +71,13 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href=<%= '#' + seminar.id %> >
-                       <div class= 'col-md-8'>
-                        <div class="list-group-item container">
+                    <div class="list-group-item container">
+                       <div class= 'col-md-10'>
                 <h2><%= seminar.title %></h2>
                 <h7><%= seminar.instructorName %></h7>
                 <h7><%= seminar.startDate.strftime("%A; %B %d, %Y; %H:%M %p") %></h7>
-              </div>
-                <div class = 'col-md-4 actions'>
+                    </div>
+                <div class = 'col-md-2 actions'>
                  <p><%= button_tag "Free", class: "btn btn-primary" %></p>
                  <p><%= button_tag "SignUp", class: "btn btn-primary" %></p>
                </div>
