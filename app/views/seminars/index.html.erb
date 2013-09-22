@@ -14,6 +14,7 @@
         </div>
         <div class="col-md-7 listing">
           <ul>
+            <% debug(@seminars) %>
             <% @seminars.each do |seminar| %>
               <li class="list-group-item">
                 <h2><%= seminar.title %></h2>

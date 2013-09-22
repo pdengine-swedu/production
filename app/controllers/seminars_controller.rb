@@ -9,7 +9,9 @@ class SeminarsController < ApplicationController
     else
       @seminars = Seminar.all
     end
-    @tagsArray = params[:blah]
+    # @tagsArray = params['blah']
+    # @seminars = Seminar.all
+    # @seminars = @seminars.tags.where("title" => { "$in" => @tagsArray });
   end
 
   # GET /seminars/1
