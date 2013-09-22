@@ -1,9 +1,9 @@
 body {
-  padding-top: 50px;
+	padding-top: 50px;
 }
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+	padding: 40px 15px;
+	text-align: center;
 }
 
 .listing {
@@ -18,14 +18,14 @@ body {
 
 .facetNav {
 	padding: 40px 15px;
-  	text-align: center;
+	text-align: center;
 	border:2px solid #eeeeee;
 	border-right:0;
 }
 
 .jumbotron {
 	height: 500px;
-	background: url(/assets/jumbotron_opaque_image.jpg) no-repeat 0;
+	background: asset-data-url('jumbotron_opaque_image.jpg') no-repeat 0;
 }
 
 .typeahead-container {
