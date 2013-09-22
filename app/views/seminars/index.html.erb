@@ -13,27 +13,37 @@
           
         </div>
         <div class="col-md-7 listing">
-          <ul>
-            <% debug(@seminars) %>
+          <div class="panel-group" id="accordion">
             <% @seminars.each do |seminar| %>
-              <li class="list-group-item">
-                <h2><%= seminar.title %></h2>
-                <%= seminar.description %>
-                <% seminar.tags.each do |tag| %>
-                  <%= tag.title %>
-                <% end %>
-              </li>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href=<%= '#' + seminar.id %> >
+                      <h2><%= seminar.title %></h2>
+                    </a>
+                  </h4>
+                </div>
+                <div class="panel-collapse collapse" id=<%= seminar.id %> >
+                  <div class="panel-body">
+                    <%= seminar.description %>
+                    <% seminar.tags.each do |tag| %>
+                      <%= tag.title %>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
             <% end %>
-          </ul>
+          </div>
         </div>
       </div>
 
     </div><!-- /.container -->
 
 
-
 <!-- <h1>Listing seminars</h1>
 
 <br>
+
+
 
 <%= link_to 'New Seminar', new_seminar_path %> -->
