@@ -1,6 +1,9 @@
 class Seminar
 	include Mongoid::Document
 	include Mongoid::Search
+	include Mongoid::Paperclip
+
+
 	field :title, type: String
 	field :description, type: String
 	field :instructorName, type: String
@@ -20,6 +23,7 @@ class Seminar
 	field :zip_code, type: String
 
 	has_and_belongs_to_many :tags
+	has_mongoid_attached_file :thumbnail
 
 	search_in :title, :description, :instructorName, :tags => :title
 

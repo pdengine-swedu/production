@@ -12,14 +12,50 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.label :description, "Seminar description. Limit 5,000 characters" %><br>
+    <%= f.text_area :description, :size => "100x10" %>
   </div>
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
+  <div class="field">
+    <%= f.label :"instructorName", "Instructor Name" %><br>
+    <%= f.text_field :instructorName %>
+  </div>
+  <div class="field">
+    <%= f.label :seminar_link, "Seminar URL" %><br>
+    <%= f.text_field :seminar_link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :thumbnail, "Upload a thumbnail for your seminar" %><br>
+    <%= f.file_field :thumbnail %>
+  </div>
+
+  <div class="field">
+    <%= f.label :seminar_link, "Seminar URL" %><br>
+    <%= f.text_field :seminar_link %>
+  </div>
+
+  <div class="field">
+    <script type="text/javascript" src="datepicker/bootstrap-datepicker.js"></script>
+    <%= f.label :startDate, "Seminar URL" %><br>
+    <%= f.text_field :startDate %>
+  </div>
+
+  <form>
+  <div class="well span12 main">
+  <input type="text" id="dp1" class="span2 datepicker" placeholder="Date..."  
+           name="date"> <br>
+      </div>
+      <input type="submit" value="Search" class="btn">
+  </form>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>
+
+

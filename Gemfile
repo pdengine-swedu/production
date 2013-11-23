@@ -33,7 +33,9 @@ end
 gem 'bson_ext'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'mongoid_search', git: 'https://github.com/mauriciozaffari/mongoid_search'
+gem "mongoid-paperclip", git: 'https://github.com/meskyanichi/mongoid-paperclip', :require => "mongoid_paperclip"
 
+gem 'bootstrap-datepicker-rails', git: 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
